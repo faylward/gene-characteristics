@@ -98,6 +98,8 @@ if __name__ == '__main__':
             GC = str(SeqUtils.GC(gene.seq[0:-3]))
             av_ARSC, av_MW, av_C_ARSC, N_C_ratio = ct.ARSC_MW_from_nucleotides(ct.screen_out_ambiguous_codons(gene.seq))
             SCU, codon_choice_rank = ct.calculate_SCU(gene, errorfile_handle)
+            if len(gene.seq)<300:
+                SCU = 'Nan'
             gene_length = str(len(gene.seq[0:-3]))
             outfile.writelines('\t'.join([gene.id, sample, GC, SCU, av_ARSC, av_C_ARSC, N_C_ratio, av_MW, codon_choice_rank, gene_length]) + '\n')
 
