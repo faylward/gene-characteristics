@@ -10,12 +10,11 @@ This module holds dictionaries that contain codon and amino acid tables, and fun
 Original citations for calculated metrics:
 
    Baudouin-Cornu P, Surdin-Kerjan Y, Marliere P, Thomas D. 2001. Molecular evolution of protein atomic
-    composition. Science 293: 297–300.
+    composition. Science 293 297–300.
 
-   Wright F. 1990. The 'effective number of codons' used in a gene. Gene 87: 23-29.
+   Wright F. 1990. The 'effective number of codons' used in a gene. Gene 87 23-29.
 
 Updated: 5/29/2017 
-Fixed SCU calculations
 """
 
 import itertools as itertools
