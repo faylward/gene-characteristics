@@ -657,3 +657,10 @@ def weighted_by_abundance(gene_95_results_handle, abundance_table, metadata_hand
 
 
     return()
+
+	
+handle = open("test_genes.fna", "r")
+for i in SeqIO.parse(handle, "fasta"):
+	seq = i.seq
+	narsc = ARSC_and_MW_from_amino_acids(seq)
+	print i.id, narsc
